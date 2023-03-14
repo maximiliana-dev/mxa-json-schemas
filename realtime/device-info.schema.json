@@ -1,0 +1,14 @@
+{
+  "$id": "device-info",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DeviceInfo",
+  "type": "object",
+  "required": ["deviceStatus"],
+  "properties": {
+    "deviceStatus": {
+      "type": "string",
+      "enum": ["ACTIVE", "NOT_CONFIGURED", "BLOCKED"]
+    },
+    "grandpaUUID": { "type": "string" }
+  }
+}
