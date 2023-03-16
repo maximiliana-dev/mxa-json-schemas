@@ -1,0 +1,14 @@
+{
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/grandpa-settings.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "GrandpaSettings",
+  "required": ["emergency", "profile", "telephony", "wakeup"],
+  "properties": {
+    "contacts": {"$ref": "/realtime/grandpa/contacts.schema.json"},
+    "emergency": {"$ref": "/realtime/grandpa/emergency-settings.schema.json"},
+    "externalApps": {"$ref": "/realtime/grandpa/external-apps.schema.json"},
+    "profile": {"$ref": "/realtime/grandpa/profile.schema.json"},
+    "telephony": {"$ref": "/realtime/grandpa/telephony-settings.schema.json"},
+    "wakeup": {"$ref": "/realtime/grandpa/wakeup-settings.schema.json"}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/telephony-settings.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "TelephonySettings",
+  "required": [
+    "acceptCalls",
+    "autoAnswer",
+    "autoAnswerDelay",
+    "reportMissedCalls",
+    "ringtone",
+    "useSpeaker"
+  ],
+  "properties": {
+    "acceptCalls": {
+      "type": "string",
+      "enum": ["ALL", "ONLY_CONTACTS"]
+    },
+    "autoAnswer": {
+      "type": "string",
+      "enum": ["ALL", "ONLY_CONTACTS", "NONE"]
+    },
+    "autoAnswerDelay": {"type": "integer", "minimum": 0},
+    "reportMissedCalls": {"type": "boolean"},
+    "ringtone": {"type": "string"},
+    "useSpeaker": {"type": "boolean"}
+  }
+}
