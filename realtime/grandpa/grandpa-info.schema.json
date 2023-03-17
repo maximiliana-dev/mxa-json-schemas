@@ -6,7 +6,7 @@
   "required": ["deviceUUID, settings, usersWithAccess"],
   "properties": {
     "deviceStatus": { "type": "string"},
-    "settings": { "$ref": "/realtime/grandpa/grandpa-settings.schema.json"},
+    "settings": { "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/grandpa-settings.schema.json"},
     "usersWithAccess": { "$ref": "/realtime/grandpa/users-with-access.schema.json"}
   }
 }
