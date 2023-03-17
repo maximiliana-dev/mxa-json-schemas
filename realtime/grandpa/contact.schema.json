@@ -7,7 +7,7 @@
   "properties": {
     "displayName": {"type": "string"},
     "phoneNumber": {"$ref": "/realtime/grandpa/phone-number.schema.json"},
-    "position": {"type": "integer", "minimum": 0},
-    "picture": {"$ref": "/realtime/grandpa/picture.schema.json"}
+    "picture": {"$ref": "/realtime/grandpa/picture.schema.json"},
+    "position": {"type": "integer", "minimum": 0}
   }
 }

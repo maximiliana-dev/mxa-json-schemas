@@ -5,8 +5,8 @@
   "type": "object",
   "required": ["deviceUUID, settings, usersWithAccess"],
   "properties": {
-    "deviceStatus": { "type": "string"},
-    "settings": { "$ref": "/grandpa/grandpa-settings.schema.json"},
-    "usersWithAccess": { "$ref": "/grandpa/users-with-access.schema.json"}
+    "deviceUUID": { "type": "string"},
+    "settings": { "$ref": "/realtime/grandpa/grandpa-settings.schema.json"},
+    "usersWithAccess": { "$ref": "/realtime/grandpa/users-with-access.schema.json"}
   }
 }
