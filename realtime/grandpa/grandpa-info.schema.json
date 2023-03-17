@@ -6,6 +6,6 @@
   "required": ["deviceUUID", "usersWithAccess"],
   "properties": {
     "deviceUUID": { "type": "string"},
-    "usersWithAccess": { "$ref": "users-with-access.schema.json"}
+    "usersWithAccess": { "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/users-with-access.schema.json"}
   }
 }
