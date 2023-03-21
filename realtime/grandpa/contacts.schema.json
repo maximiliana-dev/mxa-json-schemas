@@ -2,6 +2,6 @@
   "$id": "contacts.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Contacts",
-  "default": {},
-  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/contact.schema.json"}
+  "type": "object",
+  "properties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/contact.schema.json"}
 }
