@@ -6,6 +6,6 @@
   "required": ["info"],
   "properties": {
     "commands": {"type": "object"},
-    "info": {"$ref": "https://github.com/maximiliana-dev/mxa-json-schemas/blob/develop/realtime/device/info.schema.json"}
+    "info": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/device/info.schema.json"}
   }
 }
