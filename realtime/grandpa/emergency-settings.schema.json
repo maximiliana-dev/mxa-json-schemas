@@ -14,7 +14,7 @@
       "type": "number", "minimum": 0.0
     },
     "isDetectionEnabled": {"type": "boolean"},
-    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/phone-number.schema.json"},
+    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/shared/phone-number.schema.json"},
     "shakeEvents": {"type": "number", "minimum": 1}
   }
 }
