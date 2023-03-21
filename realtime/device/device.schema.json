@@ -1,0 +1,11 @@
+{
+  "$id": "device.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Device",
+  "type": "object",
+  "required": ["info"],
+  "properties": {
+    "commands": {"type": "object"},
+    "info": {"$ref": "https://github.com/maximiliana-dev/mxa-json-schemas/blob/develop/realtime/device/info.schema.json"}
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "$id": "grandpa-info.schema.json",
+  "$id": "grandpa.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "GrandpaInfo",
+  "title": "Grandpa",
   "type": "object",
   "required": ["deviceUUID", "settings", "usersWithAccess"],
   "properties": {
     "deviceUUID": {"type": "string"},
-    "settings": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/grandpa-settings.schema.json"},
+    "settings": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/settings.schema.json"},
     "usersWithAccess": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/users-with-access.schema.json"}
   }
 }

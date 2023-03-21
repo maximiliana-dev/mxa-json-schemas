@@ -1,7 +1,7 @@
 {
-  "$id": "grandpa-settings.schema.json",
+  "$id": "settings.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "GrandpaSettings",
+  "title": "Settings",
   "type": "object",
   "required": ["emergency", "profile", "telephony", "wakeup"],
   "properties": {
