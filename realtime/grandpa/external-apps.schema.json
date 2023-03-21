@@ -1,11 +1,8 @@
 {
-  "$id": "external-app.schema.json",
+  "$id": "external-apps.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExternalApp",
+  "title": "ExternalApps",
   "type": "object",
-  "required": ["packageName", "iconPath"],
-  "properties": {
-    "packageName": {"type": "string"},
-    "iconPath": {"type": "string"}
-  }
+  "default": {},
+  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/external-app.schema.json"}
 }
