@@ -2,6 +2,7 @@
   "$id": "telephony-settings.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "TelephonySettings",
+  "type": "object",
   "required": [
     "acceptCalls",
     "autoAnswer",

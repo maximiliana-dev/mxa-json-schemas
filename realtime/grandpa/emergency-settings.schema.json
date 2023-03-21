@@ -2,6 +2,7 @@
   "$id": "emergency-settings.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "EmergencySettings",
+  "type": "object",
   "required": [
     "accelerationThreshold",
     "isDetectionEnabled",
