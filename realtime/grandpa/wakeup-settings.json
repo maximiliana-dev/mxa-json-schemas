@@ -2,6 +2,7 @@
   "$id": "wakeup-settings.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "WakeUpSettings",
+  "type": "object",
   "required": ["accelerationThreshold"],
   "properties": {
     "accelerationThreshold": {
