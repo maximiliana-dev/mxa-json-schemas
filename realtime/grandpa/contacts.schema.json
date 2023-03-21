@@ -3,5 +3,11 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Contacts",
   "type": "object",
-  "properties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/contact.schema.json"}
+  "required": ["displayName", "phoneNumber"],
+  "properties": {
+    "displayName": {"type": "string"},
+    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/phone-number.schema.json"},
+    "picture": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/picture.schema.json"},
+    "position": {"type": "integer", "minimum": 0}
+  }
 }
