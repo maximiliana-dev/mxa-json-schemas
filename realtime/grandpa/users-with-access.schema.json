@@ -2,8 +2,8 @@
   "$id": "users-with-access.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "UsersWithAccess",
+  "type":"object",
   "required": ["accessLevel", "withAccessSince"],
-  "type": "object",
   "properties": {
     "accessLevel": {"enum": ["MANAGER", "MEMBER"]},
     "withAccessSince": {"type": "number"}

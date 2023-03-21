@@ -5,12 +5,8 @@
   "type": "object",
   "required": ["deviceUUID", "settings", "usersWithAccess"],
   "properties": {
-    "deviceUUID": { "type": "string"},
+    "deviceUUID": {"type": "string"},
     "settings": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/grandpa-settings.schema.json"},
-    "usersWithAccess": {
-      "type": "object",
-      "default": {},
-      "additionalProperties": { "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/users-with-access.schema.json"}
-    } 
+    "usersWithAccess": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/users-with-access.schema.json"}
   }
 }
