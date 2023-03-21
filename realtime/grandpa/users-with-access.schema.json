@@ -3,9 +3,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "UsersWithAccess",
   "type":"object",
-  "required": ["accessLevel", "withAccessSince"],
-  "properties": {
-    "accessLevel": {"enum": ["MANAGER", "MEMBER"]},
-    "withAccessSince": {"type": "number"}
-  }
+  "default": {},
+  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/user-with-access.schema.json"}
 }
