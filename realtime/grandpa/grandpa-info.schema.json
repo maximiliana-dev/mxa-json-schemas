@@ -6,7 +6,10 @@
   "required": ["deviceUUID", "usersWithAccess"],
   "properties": {
     "deviceUUID": { "type": "string"},
-    "settings": { "$ref": "/realtime/grandpa/grandpa-settings.schema.json"},
-    "usersWithAccess": { "$ref": "/realtime/grandpa/users-with-access.schema.json"}
+    "usersWithAccess": {
+      "type": "object",
+      "default": {},
+      "additionalProperties": { "$ref": "https://mxa-json-schemas.free.beeceptor.com/realtime/grandpa/users-with-access.schema.json"}
+    } 
   }
 }
