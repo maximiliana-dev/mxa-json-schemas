@@ -1,13 +1,13 @@
 {
-  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/contact.schema.json",
+  "$id": "contact.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Contact",
   "type": "object",
   "required": ["displayName", "phoneNumber"],
   "properties": {
     "displayName": {"type": "string"},
-    "phoneNumber": {"$ref": "/realtime/grandpa/phone-number.schema.json"},
-    "picture": {"$ref": "/realtime/grandpa/picture.schema.json"},
+    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/phone-number.schema.json"},
+    "picture": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/picture.schema.json"},
     "position": {"type": "integer", "minimum": 0}
   }
 }

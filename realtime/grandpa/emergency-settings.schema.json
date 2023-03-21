@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/emergency-settings.schema.json",
+  "$id": "emergency-settings.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "EmergencySettings",
   "required": [
@@ -13,7 +13,7 @@
       "type": "number", "minimum": 0.0
     },
     "isDetectionEnabled": {"type": "boolean"},
-    "phoneNumber": {"$ref": "/realtime/grandpa/phone-number.schema.json"},
+    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/phone-number.schema.json"},
     "shakeEvents": {"type": "number", "minimum": 1}
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpa/wakeup-settings.schema.json",
+  "$id": "wakeup-settings.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "WakeUpSettings",
   "required": ["accelerationThreshold"],
