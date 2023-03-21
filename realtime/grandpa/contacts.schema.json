@@ -1,7 +1,7 @@
 {
-  "$id": "contacts.schema.json",
+  "$id": "contact.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Contacts",
+  "title": "Contact",
   "type": "object",
   "required": ["displayName", "phoneNumber"],
   "properties": {
