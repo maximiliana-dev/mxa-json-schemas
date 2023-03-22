@@ -1,0 +1,10 @@
+{
+  "$id": "accessible-grandpas.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AccesibleGrandpas",
+  "type":"object",
+  "default": {},
+  "additionalProperties": {
+    "status": {"enum": ["ACTIVE", "HIDDEN"]}
+  }
+}
