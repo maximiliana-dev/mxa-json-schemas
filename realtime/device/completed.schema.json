@@ -1,0 +1,8 @@
+{
+  "$id": "completed.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Completed",
+  "type":"object",
+  "default": {},
+  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/device/completed-command.schema.json"}
+}

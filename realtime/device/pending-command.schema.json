@@ -1,0 +1,23 @@
+{
+  "$id": "pending-command.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Device",
+  "type": "object",
+  "required": ["info"],
+  "properties": {
+    "issuedAt": {"type": "string", "format": "date-time"},
+    "type": {"enum": [
+      "ACCELEROMETER_TEST",
+      "AUTO_CALL",
+      "CONNECTION_CHECK",
+      "FETCH_STATE",
+      "NTP_DIAGNOSTIC",
+      "NTP_RESET",
+      "OPEN_SETTINGS",
+      "RESTART",
+      "SETUP_DIAGNOSTIC",
+      "SPEED_TEST",
+      "VERSION_CHECK"
+    ]}
+  }
+}

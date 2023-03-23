@@ -1,0 +1,10 @@
+{
+  "$id": "result.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Result",
+  "type": "object",
+  "required": ["success"],
+  "properties": {
+    "success": {"type": "boolean"}
+  }
+}

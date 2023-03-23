@@ -1,0 +1,26 @@
+{
+  "$id": "completed-command.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "CompletedCommand",
+  "type": "object",
+  "required": ["completedAt", "issuedAt", "result", "type", "uuid"],
+  "properties": {
+    "completedAt": {"type": "string", "format": "date-time"},
+    "issuedAt": {"type": "string", "format": "date-time"},
+    "result": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/device/result.schema.json"},
+    "type": {"enum": [
+      "ACCELEROMETER_TEST",
+      "AUTO_CALL",
+      "CONNECTION_CHECK",
+      "FETCH_STATE",
+      "NTP_DIAGNOSTIC",
+      "NTP_RESET",
+      "OPEN_SETTINGS",
+      "RESTART",
+      "SETUP_DIAGNOSTIC",
+      "SPEED_TEST",
+      "VERSION_CHECK"
+    ]},
+    "uuid": {"type": "string"}
+  }
+}
