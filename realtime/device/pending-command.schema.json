@@ -5,7 +5,7 @@
   "type": "object",
   "required": ["info"],
   "properties": {
-    "issuedAt": {"type": "string", "format": "date-time"},
+    "issuedAt": {"type": "string"},
     "type": {"enum": [
       "ACCELEROMETER_TEST",
       "AUTO_CALL",
