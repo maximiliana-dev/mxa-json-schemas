@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Device",
   "type": "object",
-  "required": ["info"],
+  "required": ["issuedAt", "type"],
   "properties": {
     "issuedAt": {"type": "string"},
     "type": {"enum": [
