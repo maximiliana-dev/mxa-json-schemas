@@ -7,7 +7,7 @@
   "properties": {
     "completedAt": {"type": "string"},
     "issuedAt": {"type": "string"},
-    "result": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/device/result.schema.json"},
+    "result": {"type": "object"},
     "type": {"enum": [
       "ACCELEROMETER_TEST",
       "AUTO_CALL",
