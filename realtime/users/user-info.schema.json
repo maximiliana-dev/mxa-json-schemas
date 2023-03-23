@@ -1,7 +1,7 @@
 {
-  "$id": "info.schema.json",
+  "$id": "user-info.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Info",
+  "title": "UserInfo",
   "type":"object",
   "required": ["name", "phoneNumber", "pictureURL", "userSince"],
   "properties": {

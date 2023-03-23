@@ -1,7 +1,7 @@
 {
-  "$id": "device-fcm.schema.json",
+  "$id": "fcm-device.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Device",
+  "title": "FCMDevice",
   "type":"object",
   "required": ["lastUpdated", "token"],
   "properties": {

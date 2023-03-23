@@ -4,5 +4,5 @@
   "title": "FCM",
   "type": "object",
   "default": {},
-  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/users/devices.schema.json"}
+  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/users/fcm-devices.schema.json"}
 }
