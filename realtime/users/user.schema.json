@@ -6,7 +6,7 @@
   "required": ["info"],
   "properties": {
     "accessibleGrandpas": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/users/accessible-grandpas.schema.json"},
-    "fcm": {"type": "object"},
+    "fcm": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/users/fcm.schema.json"},
     "info": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/users/info.schema.json"}
   }
 }
