@@ -1,5 +1,5 @@
 {
-  "$id": "device.schema.json",
+  "$id": "device-fcm.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Device",
   "type":"object",
