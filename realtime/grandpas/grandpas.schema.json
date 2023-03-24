@@ -7,7 +7,7 @@
   "patternProperties": {
     "^[0-9a-f]{8}-[0-9a-f]{4}-[4][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$": {
       "type": "object",
-      "required": ["deviceUUID", "settings", "usersWithAccess"],
+      "required": ["deviceUUID", "settings"],
       "properties": {
         "deviceUUID": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[5][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$"},
         "settings": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/settings.schema.json"},
