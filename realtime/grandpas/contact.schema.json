@@ -6,8 +6,8 @@
   "required": ["displayName", "phoneNumber"],
   "properties": {
     "displayName": {"type": "string"},
-    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/shared/phone-number.schema.json"},
-    "picture": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpas/picture.schema.json"},
+    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"},
+    "picture": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/picture.schema.json"},
     "position": {"type": "integer", "minimum": 0}
   }
 }

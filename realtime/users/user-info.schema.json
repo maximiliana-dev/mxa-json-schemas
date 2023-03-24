@@ -6,7 +6,7 @@
   "required": ["name", "phoneNumber", "pictureURL", "userSince"],
   "properties": {
     "name": {"type": "string"},
-    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/shared/phone-number.schema.json"},
+    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"},
     "pictureURL": {"type": "string"},
     "userSince": {"type": "number", "minimum": 0}
   }

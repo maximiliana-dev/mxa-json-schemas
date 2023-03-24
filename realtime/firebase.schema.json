@@ -6,12 +6,12 @@
   "required": ["accounts", "devices", "global", "grandpas", "invitations", "misc", "monitoring", "users"],
   "properties": {
     "accounts": {"type": "object"},
-    "devices": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/devices/devices.schema.json"},
+    "devices": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/devices.schema.json"},
     "global": {"type": "object"},
-    "grandpas": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/grandpas/grandpas.schema.json"},
+    "grandpas": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/grandpas.schema.json"},
     "invitations": {"type": "object"},
     "misc": {"type": "object"},
     "monitoring": {"type": "object"},
-    "users": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/users/users.schema.json"}
+    "users": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/users/users.schema.json"}
   }
 }

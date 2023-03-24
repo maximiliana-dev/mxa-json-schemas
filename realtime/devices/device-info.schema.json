@@ -10,6 +10,6 @@
       "enum": ["ACTIVE", "NOT_CONFIGURED", "BLOCKED"]
     },
     "grandpaUUID": {"type": "string"},
-    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/develop/realtime/shared/phone-number.schema.json"}
+    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"}
   }
 }
