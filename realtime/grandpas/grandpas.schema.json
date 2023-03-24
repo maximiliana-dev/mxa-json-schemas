@@ -1,8 +1,19 @@
 {
-  "$id": "grandpas.schema.json",
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/grandpas.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Grandpas",
   "type": "object",
   "default": {},
-  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/grandpa.schema.json"}
+  "patternProperties": {
+    "^[0-9a-f]{8}-[0-9a-f]{4}-[5][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$": {
+      "type": "object",
+      "required": ["deviceUUID", "settings", "usersWithAccess"],
+      "properties": {
+        "deviceUUID": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[5][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$"},
+        "settings": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/settings.schema.json"},
+        "usersWithAccess": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/users-with-access.schema.json"}
+      }
+    }
+  },
+  "additionalProperties": false
 }

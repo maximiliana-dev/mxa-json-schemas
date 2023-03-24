@@ -1,8 +1,15 @@
 {
-  "$id": "users-with-access.schema.json",
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/users-with-access.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "UsersWithAccess",
   "type":"object",
   "default": {},
-  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/user-with-access.schema.json"}
+  "additionalProperties": {
+    "type":"object",
+    "required": ["accessLevel", "withAccessSince"],
+    "properties": {
+      "accessLevel": {"enum": ["MANAGER", "MEMBER"]},
+      "withAccessSince": {"type": "number"}
+    }
+  }
 }
