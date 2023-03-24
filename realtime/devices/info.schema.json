@@ -1,7 +1,7 @@
 {
-  "$id": "device-info.schema.json",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "DeviceInfo",
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/info.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Info",
   "type": "object",
   "required": ["deviceStatus"],
   "properties": {
@@ -9,7 +9,7 @@
       "type": "string",
       "enum": ["ACTIVE", "NOT_CONFIGURED", "BLOCKED"]
     },
-    "grandpaUUID": {"type": "string"},
+    "grandpaUUID": {"type": "string", "format": "uuid"},
     "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"}
   }
 }

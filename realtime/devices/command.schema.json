@@ -1,0 +1,32 @@
+{
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/command.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Command",
+  "type": "object",
+  "patternProperties": {
+    "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[4][0-9a-fA-F]{3}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$": {
+      "type": "object",
+      "required": ["issuedAt", "type"],
+      "properties": {
+        "completedAt": {"type": "string"},
+        "issuedAt": {"type": "string"},
+        "result": {"type": "object"},
+        "type": {"enum": [
+          "ACCELEROMETER_TEST",
+          "AUTO_CALL",
+          "CONNECTION_CHECK",
+          "FETCH_STATE",
+          "NTP_DIAGNOSTIC",
+          "NTP_RESET",
+          "OPEN_SETTINGS",
+          "RESTART",
+          "SETUP_DIAGNOSTIC",
+          "SPEED_TEST",
+          "VERSION_CHECK"
+        ]},
+        "uuid": {"type": "string", "format": "uuid"}
+      }
+    }
+  },
+  "additionalProperties": false
+}

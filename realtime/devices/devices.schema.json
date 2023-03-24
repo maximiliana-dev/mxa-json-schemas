@@ -1,12 +1,17 @@
 {
-  "$id": "devices.schema.json",
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/devices.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Devices",
   "type": "object",
   "default": {},
   "patternProperties": {
     "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[5][0-9a-fA-F]{3}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$": {
-      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/device.schema.json"
+      "type":"object",
+      "required": ["info"],
+      "properties": {
+        "commands": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/commands.schema.json"},
+        "info": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/info.schema.json"}
+      }
     }
   },
   "additionalProperties": false
