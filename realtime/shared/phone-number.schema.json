@@ -1,0 +1,6 @@
+{
+  "$id": "phone-number.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "PhoneNumber",
+  "type": ["string", "integer"]
+}

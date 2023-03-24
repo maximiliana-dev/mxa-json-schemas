@@ -1,0 +1,11 @@
+{
+  "$id": "fcm-device.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "FCMDevice",
+  "type":"object",
+  "required": ["lastUpdated", "token"],
+  "properties": {
+    "lastUpdated": {"type": "number", "minimum": 0},
+    "token": {"type":"string"}
+  }
+}

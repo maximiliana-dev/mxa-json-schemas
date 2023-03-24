@@ -1,0 +1,8 @@
+{
+  "$id": "fcm.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "FCM",
+  "type": "object",
+  "default": {},
+  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/users/fcm-devices.schema.json"}
+}

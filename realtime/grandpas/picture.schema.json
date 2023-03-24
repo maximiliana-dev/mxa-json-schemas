@@ -1,0 +1,10 @@
+{
+  "$id": "picture.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Picture",
+  "type": "object",
+  "required": ["lastUpdated"],
+  "properties": {
+    "lastUpdated": {"type": "integer", "minimum": 0}
+  }
+}

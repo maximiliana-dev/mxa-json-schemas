@@ -1,0 +1,19 @@
+{
+  "$id": "wakeup-settings.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "WakeUpSettings",
+  "type": "object",
+  "required": ["accelerationThreshold"],
+  "properties": {
+    "accelerationThreshold": {
+      "type": "number", "minimum": 0.0
+    },
+    "strategies": {
+      "type": "object",
+      "properties": {
+        "PROXIMITY": {"type": "boolean"},
+        "SHAKE": {"type": "boolean"}
+      }
+    }
+  }
+}

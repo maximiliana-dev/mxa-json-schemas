@@ -1,5 +1,5 @@
 {
-  "$id": "device-info",
+  "$id": "device-info.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "DeviceInfo",
   "type": "object",
@@ -9,6 +9,7 @@
       "type": "string",
       "enum": ["ACTIVE", "NOT_CONFIGURED", "BLOCKED"]
     },
-    "grandpaUUID": { "type": "string" }
+    "grandpaUUID": {"type": "string"},
+    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"}
   }
 }

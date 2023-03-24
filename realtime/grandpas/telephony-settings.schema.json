@@ -1,0 +1,28 @@
+{
+  "$id": "telephony-settings.schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "TelephonySettings",
+  "type": "object",
+  "required": [
+    "acceptCalls",
+    "autoAnswer",
+    "autoAnswerDelay",
+    "reportMissedCalls",
+    "ringtone",
+    "useSpeaker"
+  ],
+  "properties": {
+    "acceptCalls": {
+      "type": "string",
+      "enum": ["ALL", "ONLY_CONTACTS"]
+    },
+    "autoAnswer": {
+      "type": "string",
+      "enum": ["ALL", "ONLY_CONTACTS", "NONE"]
+    },
+    "autoAnswerDelay": {"type": "integer", "minimum": 0},
+    "reportMissedCalls": {"type": "boolean"},
+    "ringtone": {"type": "string"},
+    "useSpeaker": {"type": "boolean"}
+  }
+}
