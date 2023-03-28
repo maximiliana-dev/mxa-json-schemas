@@ -16,10 +16,12 @@
         "policy": {"enum": ["MIGRATION_POLICY", "BASIC_INITIAL_POLICY"]},
         "usedBy": {
           "type":"object",
-          "^[A-Za-z0-9]{28}$": {
-            "type": "object",
-            "properties": {
-              "acceptedAt": {"type": "number", "minimum": 0}
+          "patternProperties": {
+            "^[A-Za-z0-9]{28}$": {
+              "type": "object",
+              "properties": {
+                "acceptedAt": {"type": "number", "minimum": 0}
+              }
             }
           },
           "additionalProperties": false
