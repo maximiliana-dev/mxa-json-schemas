@@ -1,8 +1,10 @@
 {
-  "$id": "fcm.schema.json",
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/users/fcm.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "FCM",
   "type": "object",
-  "default": {},
-  "additionalProperties": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/users/fcm-devices.schema.json"}
+  "required": ["devices"],
+  "properties": {
+    "devices": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/users/devices.schema.json"}
+  }
 }
