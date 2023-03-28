@@ -5,7 +5,7 @@
   "type":"object",
   "required": ["connectivity", "dbm", "firebaseLatency", "timestamp"],
   "properties": {
-    "connectivity": {"enum": ["MOBILE", "WIFI"]},
+    "connectivity": {"enum": ["MOBILE", "WIFI", "NONE"]},
     "dbm": {"type": "number"},
     "firebaseLatency": {"type": "number"},
     "speed": {
