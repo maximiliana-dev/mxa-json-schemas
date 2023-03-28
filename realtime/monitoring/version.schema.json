@@ -6,6 +6,6 @@
   "required": ["timestamp", "version"],
   "properties": {
     "timestamp": {"type": "string"},
-    "version": {"type": "number"}
+    "version": {"type": ["string", "number"]}
   }
 }
