@@ -1,7 +1,7 @@
 {
-  "$id": "firebase.schema.json",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Firebase",
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/root.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
   "type": "object",
   "required": ["accounts", "devices", "global", "grandpas", "invitations", "misc", "monitoring", "users"],
   "properties": {
