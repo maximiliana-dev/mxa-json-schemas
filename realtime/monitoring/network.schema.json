@@ -17,6 +17,6 @@
       }
     },
     "transferRate": {"type": "number"}, 
-    "timestamp": {"type": "number"}
+    "timestamp": {"type": "string"}
   }
 }
