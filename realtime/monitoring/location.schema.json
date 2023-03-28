@@ -1,0 +1,12 @@
+{
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/location.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Location",
+  "type":"object",
+  "required": ["latitude", "longitude", "timestamp"],
+  "properties": {
+    "latitude": {"type": "number"},
+    "longitude": {"type": "number"},
+    "timestamp": {"type": "string"}
+  }
+}

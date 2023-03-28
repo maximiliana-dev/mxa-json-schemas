@@ -1,0 +1,22 @@
+{
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/network.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Network",
+  "type":"object",
+  "required": ["connectivity", "dbm", "firebaseLatency", "timestamp"],
+  "properties": {
+    "connectivity": {"enum": ["MOBILE", "WIFI"]},
+    "dbm": {"type": "number"},
+    "firebaseLatency": {"type": "number"},
+    "speed": {
+      "type": "object",
+      "required": ["download", "upload"],
+      "properties": {
+        "download": {"type": "number"},
+        "upload": {"type": "number"}
+      }
+    },
+    "transferRate": {"type": "number"}, 
+    "timestamp": {"type": "number"}
+  }
+}

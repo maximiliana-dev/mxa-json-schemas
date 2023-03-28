@@ -11,7 +11,7 @@
     "grandpas": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/grandpas.schema.json"},
     "invitations": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/invitations/invitations.schema.json"},
     "misc": {"type": "object"},
-    "monitoring": {"type": "object"},
+    "monitoring": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/monitoring.schema.json"},
     "users": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/users/users.schema.json"}
   }
 }

@@ -1,0 +1,21 @@
+{
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/vitals.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vitals",
+  "type": "object",
+  "default": {},
+  "patternProperties": {
+    "^[0-9a-f]{8}-[0-9a-f]{4}-[5][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$": {
+      "type":"object",
+      "required": ["battery", "heartbeat", "location", "version"],
+      "properties": {
+        "battery": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/battery.schema.json"},
+        "heartbeat": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/heartbeat.schema.json"},
+        "location": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/location.schema.json"},
+        "network": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/network.schema.json"},
+        "version": {"$ref":"https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/monitoring/version.schema.json"}
+      }
+    }
+  },
+  "additionalProperties": false
+}
