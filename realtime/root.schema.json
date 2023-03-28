@@ -9,7 +9,7 @@
     "devices": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/devices.schema.json"},
     "global": {"type": "object"},
     "grandpas": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/grandpas.schema.json"},
-    "invitations": {"type": "object"},
+    "invitations": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/invitations/invitations.schema.json"},
     "misc": {"type": "object"},
     "monitoring": {"type": "object"},
     "users": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/users/users.schema.json"}

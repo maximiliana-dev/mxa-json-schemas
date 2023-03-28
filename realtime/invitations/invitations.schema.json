@@ -1,0 +1,31 @@
+{
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/devices/devices.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Devices",
+  "type": "object",
+  "default": {},
+  "patternProperties": {
+    "^[0-9a-f]{8}-[0-9a-f]{4}-[4][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$": {
+      "type":"object",
+      "required": ["createdAt", "createdBy", "grandpaUUID", "isAvailable", "policy"],
+      "properties": {
+        "createdAt": {"type": "number", "minimum": 0},
+        "createdBy": {"type": "string"},
+        "grandpaUUID": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[4][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$"},
+        "isAvailable": {"type": "boolean"},
+        "policy": {"enum": ["MIGRATION_POLICY", "BASIC_INITIAL_POLICY"]},
+        "usedBy": {
+          "type":"object",
+          "^[A-Za-z0-9]{28}$": {
+            "type": "object",
+            "properties": {
+              "acceptedAt": {"type": "number", "minimum": 0}
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
