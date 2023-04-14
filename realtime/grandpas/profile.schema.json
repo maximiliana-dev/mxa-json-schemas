@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Profile",
   "type": "object",
-  "required": ["displayName"],
+  "required": ["displayName", "picture"],
   "properties": {
     "displayName": {"type": "string"},
     "picture": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/picture.schema.json"}
