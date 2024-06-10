@@ -11,7 +11,7 @@
     },
     "pictureURL": {
       "type": "string",
-      "pattern": "^https://firebasestorage.googleapis.com/v0/b/maximiliana-8227a.appspot.com/o/users%2F[w-]+%2F[w.-]+?alt=media&token=[w-]+$"
+      "pattern": "^https:\\/\\/firebasestorage\\.googleapis\\.com\\/v0\\/b\\/maximiliana-8227a\\.appspot\\.com\\/o\\/users%2F[\\w-]+%2F[\\w.-]+\\?alt=media&token=[\\w-]+$"
     },
     "userSince": { "type": "number", "minimum": 0 }
   }
