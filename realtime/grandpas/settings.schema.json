@@ -5,12 +5,29 @@
   "type": "object",
   "required": ["accessibility", "emergency", "profile", "telephony", "wakeup"],
   "properties": {
-    "accessibility": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/accessibility-settings.schema.json"},
-    "contacts": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/contacts.schema.json"},
-    "emergency": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/emergency-settings.schema.json"},
-    "externalApps": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/external-apps.schema.json"},
-    "profile": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/profile.schema.json"},
-    "telephony": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/telephony-settings.schema.json"},
-    "wakeup": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/wakeup-settings.schema.json"}
+    "accessibility": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/accessibility-settings.schema.json"
+    },
+    "contacts": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/contacts.schema.json"
+    },
+    "emergency": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/emergency-settings.schema.json"
+    },
+    "externalApps": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/external-apps.schema.json"
+    },
+    "layout": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/layout-settings.schema.json"
+    },
+    "profile": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/profile.schema.json"
+    },
+    "telephony": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/telephony-settings.schema.json"
+    },
+    "wakeup": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/wakeup-settings.schema.json"
+    }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/layout-settings.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LayoutSettings",
+  "type": "object",
+  "required": ["batteryPolicy", "dynamicPlazaPolicy"],
+  "properties": {
+    "batteryPolicy": {
+      "type": "string",
+      "enum": ["CLASSIC", "FLUENT"]
+    },
+    "dynamicPlazaPolicy": {
+      "type": "object",
+      "required": ["hasDate", "hasSaint", "hasWeather", "main"],
+      "properties": {
+        "hasDate": { "type": "boolean" },
+        "hasSaint": { "type": "boolean" },
+        "hasWeather": { "type": "boolean" },
+        "main": { "type": "string", "enum": ["GREETING", "CLOCK"] }
+      }
+    }
+  }
+}
