@@ -9,6 +9,8 @@
     "autoAnswerDelay",
     "reportMissedCalls",
     "ringtone",
+    "showKeyboardButton",
+    "showSpeakerButton",
     "useSpeaker"
   ],
   "properties": {
@@ -20,9 +22,11 @@
       "type": "string",
       "enum": ["ALL", "ONLY_CONTACTS", "NONE"]
     },
-    "autoAnswerDelay": {"type": "integer", "minimum": 0},
-    "reportMissedCalls": {"type": "boolean"},
-    "ringtone": {"type": "string"},
-    "useSpeaker": {"type": "boolean"}
+    "autoAnswerDelay": { "type": "integer", "minimum": 0 },
+    "reportMissedCalls": { "type": "boolean" },
+    "ringtone": { "type": "string" },
+    "showKeyboardButton": { "type": "boolean" },
+    "showSpeakerButton": { "type": "boolean" },
+    "useSpeaker": { "type": "boolean" }
   }
 }
