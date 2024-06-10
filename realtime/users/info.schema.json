@@ -2,12 +2,17 @@
   "$id": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/users/info.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Info",
-  "type":"object",
+  "type": "object",
   "required": ["name", "phoneNumber", "pictureURL", "userSince"],
   "properties": {
-    "name": {"type": "string"},
-    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"},
-    "pictureURL": {"type": "string"},
-    "userSince": {"type": "number", "minimum": 0}
+    "name": { "type": "string" },
+    "phoneNumber": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"
+    },
+    "pictureURL": {
+      "type": "string",
+      "pattern": "^https://firebasestorage.googleapis.com/v0/b/maximiliana-8227a.appspot.com/o/users%2F[w-]+%2F[w.-]+?alt=media&token=[w-]+$"
+    },
+    "userSince": { "type": "number", "minimum": 0 }
   }
 }
