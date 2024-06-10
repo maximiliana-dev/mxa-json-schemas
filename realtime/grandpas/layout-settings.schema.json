@@ -3,9 +3,9 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "LayoutSettings",
   "type": "object",
-  "required": ["batteryPolicy", "dynamicPlazaPolicy"],
+  "required": ["batteryStyle", "dynamicPlazaPolicy"],
   "properties": {
-    "batteryPolicy": {
+    "batteryStyle": {
       "type": "string",
       "enum": ["CLASSIC", "FLUENT"]
     },
