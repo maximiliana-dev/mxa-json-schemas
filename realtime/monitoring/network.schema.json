@@ -9,10 +9,10 @@
     "latency": { "type": "number" },
     "signal": {
       "type": "object",
-      "required": ["level", "dom"],
+      "required": ["level", "dbm"],
       "properties": {
-        "level": { "type": "number" },
-        "dom": { "type": "number" }
+        "level": { "type": "number", "minimum": 0, "maximum": 4 },
+        "dbm": { "type": "number", "exclusiveMaximum": 0 }
       }
     },
     "timestamp": { "type": "string" }
