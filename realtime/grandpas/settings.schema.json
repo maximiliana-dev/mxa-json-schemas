@@ -3,7 +3,14 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Settings",
   "type": "object",
-  "required": ["accessibility", "emergency", "profile", "telephony", "wakeup"],
+  "required": [
+    "accessibility",
+    "layout",
+    "emergency",
+    "profile",
+    "telephony",
+    "wakeup"
+  ],
   "properties": {
     "accessibility": {
       "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/grandpas/accessibility-settings.schema.json"

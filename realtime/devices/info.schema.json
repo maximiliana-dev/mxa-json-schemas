@@ -7,9 +7,18 @@
   "properties": {
     "deviceStatus": {
       "type": "string",
-      "enum": ["ACTIVE", "NOT_CONFIGURED", "BLOCKED"]
+      "enum": ["ACTIVE", "NOT_CONFIGURED", "BLOCKED", "LOCKED_FOR_CHANGE"]
     },
-    "grandpaUUID": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[4][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$"},
-    "phoneNumber": {"$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"}
+    "grandpaUUID": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[4][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "imei": {
+      "type": "string",
+      "pattern": "^d{14,15}$"
+    },
+    "phoneNumber": {
+      "$ref": "https://raw.githubusercontent.com/maximiliana-dev/mxa-json-schemas/master/realtime/shared/phone-number.schema.json"
+    }
   }
 }
