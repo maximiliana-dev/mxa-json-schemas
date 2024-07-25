@@ -12,7 +12,7 @@
       "required": ["level", "dbm"],
       "properties": {
         "level": { "type": "number", "minimum": 0, "maximum": 4 },
-        "dbm": { "type": "number", "exclusiveMaximum": 0 }
+        "dbm": { "type": "number", "maximum": 0 }
       }
     },
     "timestamp": { "type": "string" }
